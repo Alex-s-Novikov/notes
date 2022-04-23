@@ -3,7 +3,7 @@ const path = require('path')
 const chalk = require('chalk')
 
 const notesPath = path.join(__dirname, 'db.json')
-
+let d = new Date().toISOString();
 async function addNote(title) {
   const notes = await getNotes()
   const note = {
@@ -18,7 +18,7 @@ async function addNote(title) {
 }
 
 async function getNotes() {
-  const notes = await fs.readFile(notesPath, {encoding: 'utf-8'})
+  const notes = await fs.readFile(notesPath, { encoding: 'utf-8' })
   return Array.isArray(JSON.parse(notes)) ? JSON.parse(notes) : []
 }
 

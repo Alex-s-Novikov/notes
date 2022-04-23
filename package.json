@@ -11,7 +11,7 @@
     "node",
     "javascript"
   ],
-  "author": "Vladilen Minin <v@mail.ru>",
+  "author": "Alex <novikov.aleksey@tatar.ru>",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.1",
